@@ -14,7 +14,7 @@ class Curso extends Model
 //cuando hay insercion masiva, solo guardo en la BD estos campos indicados aqui. Es por seguridad
 	protected $fillable = ['name','slug','descripcion','categoria']; 
 
-//cuando hay insercion masiva, NO en la BD estos campos indicados aqui. Lo contrario al anterior
+//cuando hay insercion masiva, NO guardo en la BD estos campos indicados aqui. Lo contrario al anterior
 //	protected $guarded = ['status']; 
 	protected $guarded = [];			//nada que proteger 
 
