@@ -19,7 +19,7 @@ class Curso extends Model
 	protected $guarded = [];			//nada que proteger 
 
 //esta funcion esta implementada en la clase Model y por defecto devuelve 'id'
-//la sobreescribo para que las busquedas inteligentes dentro de la vble curso sean por campo 'slug' y no por 'id' 	
+//la sobreescribo para que las busquedas inteligentes dentro de la vble curso sean por campo 'slug' y no por 'id' . /* esta funcion hace que las urls se formen acon el slug y no con id de una dada categoria */	
 	public function getRouteKeyName(){
 		//return $this->getKeyName();
 		return 'slug';
